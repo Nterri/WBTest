@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="icon" href="icons/favicon.ico" type="image/ico">
+   <title>Товары и точка</title>
+</head>
+
+<body>
+   <div class="wrapper">
+      <header>
+         <div class="header__container container">
+            <div class="header__burger"><span></span><span></span><span></span></div>
+            <h1 class="header__title">
+               <a href="/index.html">Товары и точка</a>
+            </h1>
+            <div class="header__search search" id="search-place">
+               <input class="search__input" type="text" placeholder="Я ищу...">
+               <button class="search__button">
+                  <i class="icon-search"></i>
+               </button>
+            </div>
+            <div class="header__btns btns-header">
+               <button class="btns-header__block block-btn">
+                  <div class="block-btn__icon">
+                     <i class="icon-exclude"></i>
+                  </div>
+                  <h4 class="block-btn__title">Профиль</h4>
+               </button>
+               <button class="btns-header__block block-btn bag">
+                  <div class="block-btn__icon">
+                     <i class="icon-bag"></i>
+                     <span class="number-format">3</span>
+                  </div>
+                  <h4 class="block-btn__title">Корзина</h4>
+               </button>
+            </div>
+         </div>
+      </header>
+      <main>
+         <div class="main__container container">
+            <div class="main__content content-main">
+               <h2 class="content-main__title">Корзина</h2>
+               <div class="content-main__sales sales-content main-block-sales">
+                  <div class="sales-content__head head-sales">
+                     <div class="head-sales__checkbox">
+                        <input type="checkbox" class="custom-checkbox" id="all">
+                        <label for="all">Выбрать все</label>
+                     </div>
+                     <div class="head-sales__all hide">266 товаров · 2 100 569 сом</div>
+                     <button data-id="block-sales-1" class="head-sales__button buttons-open main-arrow">
+                        <i class="icon-arrow"></i>
+                     </button>
+                  </div>
+                  <div id="block-sales-1" class="sales-content__main main-sales with-check">
+                     <div class="main-sales__block block-sales">
+                        <div class="block-sales__checkbox">
+                           <input type="checkbox" class="custom-checkbox" id="sales1">
+                           <label for="sales1"></label>
+                        </div>
+                        <div class="block-sales__image">
+                           <img src="images/sales1.png" alt="sales">
+                        </div>
+                        <div class="block-sales__info info-sales">
+                           <a href="#" class="info-sales__title">Футболка UZcotton мужская</a>
+                           <div class="info-sales__custom custom-sales">
+                              <div class="custom-sales__block">Цвет: белый</div>
+                              <div class="custom-sales__block size">Размер: 56</div>
+                           </div>
+                           <div class="info-sales__warehouse">Коледино WB</div>
+                           <div class="info-sales__manufacturer manufacturer-info">
+                              <div class="manufacturer-info__text">OOO Вайлдберриз</div>
+                              <div class="manufacturer-info__content content-manufacturer">
+                                 <button data-id="block-active-1" class="content-manufacturer__button hover-block">
+                                    <i class="icon-info"></i>
+                                 </button>
+                                 <div id="block-active-1" class="content-manufacturer__desc desc-content active-block">
+                                    <h4 class="desc-content__name">OOO «ВАЙЛДБЕРРИЗ»</h4>
+                                    <div class="desc-content__number">ОГРН: 5167746237148</div>
+                                    <div class="desc-content__address">129337, Москва, улица Красная Сосна, 2, корпус 1,
+                                       стр. 1, помещение 2, офис 34</div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="block-sales__panel panel-sales">
+                           <div class="panel-sales__count count-panel">
+                              <button class="count-panel__sub">−</button>
+                              <div class="count-panel__number number-format">1</div>
+                              <button class="count-panel__add">+</button>
+                           </div>
+                           <div class="panel-sales__remained">Осталось 2 шт.</div>
+                           <div class="panel-sales__btns btns-panel">
+                              <button class="btns-panel__button love">
+                                 <i class="icon-love"></i>
+                              </button>
+                              <button class="btns-panel__button delete">
+                                 <i class="icon-trash"></i>
+                              </button>
+                           </div>
+                        </div>
+                        <div class="block-sales__price price-sales">
+                           <div class="price-sales__main number-format price-sales">522</div>
+                           <div class="price-sales__line line-sales">
+                              <div data-id="block-active-2"
+                                 class="line-sales__text hover-block number-format price-sales price-line">1051</div>
+                              <div id="block-active-2" class="line-sales__content content-line active-block">
+                                 <div class="content-line__block block-line">
+                                    <div class="block-line__title">Скидка 55%</div>
+                                    <div class="block-line__value">-300 сом</div>
+                                 </div>
+                                 <div class="content-line__block block-line">
+                                    <div class="block-line__title">Скидка покупателя 10%</div>
+                                    <div class="block-line__value">-30 сом</div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="main-sales__block block-sales">
+                        <div class="block-sales__checkbox">
+                           <input type="checkbox" class="custom-checkbox" id="sales2">
+                           <label for="sales2"></label>
+                        </div>
+                        <div class="block-sales__image">
+                           <img src="images/sales2.png" alt="sales">
+                        </div>
+                        <div class="block-sales__info info-sales">
+                           <a href="#" class="info-sales__title">Силиконовый чехол картхолдер (отверстия) для карт,
+                              прозрачный
+                              кейс бампер на Apple iPhone XR, MobiSafe</a>
+                           <div class="info-sales__custom custom-sales">
+                              <div class="custom-sales__block">Цвет: прозрачный</div>
+                           </div>
+                           <div class="info-sales__warehouse">Коледино WB</div>
+                           <div class="info-sales__manufacturer manufacturer-info">
+                              <div class="manufacturer-info__text">OOO Мегапрофстиль</div>
+                              <div class="manufacturer-info__content content-manufacturer">
+                                 <button data-id="block-active-3" class="content-manufacturer__button hover-block">
+                                    <i class="icon-info"></i>
+                                 </button>
+                                 <div id="block-active-3" class="content-manufacturer__desc desc-content active-block">
+                                    <h4 class="desc-content__name">OOO «МЕГАПРОФСТИЛЬ»</h4>
+                                    <div class="desc-content__number">ОГРН: 5167746237148</div>
+                                    <div class="desc-content__address">129337, Москва, улица Красная Сосна, 2, корпус 1,
+                                       стр. 1, помещение 2, офис 34</div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="block-sales__panel panel-sales">
+                           <div class="panel-sales__count count-panel">
+                              <button class="count-panel__sub">−</button>
+                              <div class="count-panel__number number-format">200</div>
+                              <button class="count-panel__add">+</button>
+                           </div>
+                           <div class="panel-sales__btns btns-panel">
+                              <button class="btns-panel__button love">
+                                 <i class="icon-love"></i>
+                              </button>
+                              <button class="btns-panel__button delete">
+                                 <i class="icon-trash"></i>
+                              </button>
+                           </div>
+                        </div>
+                        <div class="block-sales__price price-sales">
+                           <div class="price-sales__main number-format price-sales">2100047</div>
+                           <div class="price-sales__line line-sales">
+                              <div data-id="block-active-4"
+                                 class="line-sales__text hover-block number-format price-sales price-line">2300047</div>
+                              <div id="block-active-4" class="line-sales__content content-line active-block">
+                                 <div class="content-line__block block-line">
+                                    <div class="block-line__title">Скидка 55%</div>
+                                    <div class="block-line__value">-300 сом</div>
+                                 </div>
+                                 <div class="content-line__block block-line">
+                                    <div class="block-line__title">Скидка покупателя 10%</div>
+                                    <div class="block-line__value">-30 сом</div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="main-sales__block block-sales">
+                        <div class="block-sales__checkbox">
+                           <input type="checkbox" class="custom-checkbox" id="sales3">
+                           <label for="sales3"></label>
+                        </div>
+                        <div class="block-sales__image">
+                           <img src="images/sales3.png" alt="sales">
+                        </div>
+                        <div class="block-sales__info info-sales">
+                           <a href="#" class="info-sales__title">Карандаши цветные Faber-Castell "Замок", набор 24
+                              цвета, заточенные, шестигранные, Faber-Castell</a>
+                           <div class="info-sales__warehouse">Коледино WB</div>
+                           <div class="info-sales__manufacturer manufacturer-info">
+                              <div class="manufacturer-info__text">OOO Вайлдберриз</div>
+                              <div class="manufacturer-info__content content-manufacturer">
+                                 <button data-id="block-active-5" class="content-manufacturer__button hover-block">
+                                    <i class="icon-info"></i>
+                                 </button>
+                                 <div id="block-active-5" class="content-manufacturer__desc desc-content active-block">
+                                    <h4 class="desc-content__name">OOO «ВАЙЛДБЕРРИЗ»</h4>
+                                    <div class="desc-content__number">ОГРН: 5167746237148</div>
+                                    <div class="desc-content__address">129337, Москва, улица Красная Сосна, 2, корпус 1,
+                                       стр. 1, помещение 2, офис 34</div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="block-sales__panel panel-sales">
+                           <div class="panel-sales__count count-panel">
+                              <button class="count-panel__sub">−</button>
+                              <div class="count-panel__number number-format">2</div>
+                              <button class="count-panel__add">+</button>
+                           </div>
+                           <div class="panel-sales__remained">Осталось 2 шт.</div>
+                           <div class="panel-sales__btns btns-panel">
+                              <button class="btns-panel__button love">
+                                 <i class="icon-love"></i>
+                              </button>
+                              <button class="btns-panel__button delete">
+                                 <i class="icon-trash"></i>
+                              </button>
+                           </div>
+                        </div>
+                        <div class="block-sales__price price-sales">
+                           <div class="price-sales__main  number-format price-sales">494</div>
+                           <div class="price-sales__line line-sales">
+                              <div data-id="block-active-6"
+                                 class="line-sales__text hover-block number-format price-sales price-line">950</div>
+                              <div id="block-active-6" class="line-sales__content content-line active-block">
+                                 <div class="content-line__block block-line">
+                                    <div class="block-line__title">Скидка 55%</div>
+                                    <div class="block-line__value">-300 сом</div>
+                                 </div>
+                                 <div class="content-line__block block-line">
+                                    <div class="block-line__title">Скидка покупателя 10%</div>
+                                    <div class="block-line__value">-30 сом</div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="content-main__sales sales-content main-block-sales missing">
+                  <div class="sales-content__head head-sales line">
+                     <div class="head-sales__checkbox title">
+                        Отсутствуют · 3 товара
+                     </div>
+                     <button data-id="block-sales-2" class="head-sales__button buttons-open">
+                        <i class="icon-arrow"></i>
+                     </button>
+                  </div>
+                  <div id="block-sales-2" class="sales-content__main main-sales">
+                     <div class="main-sales__block block-sales">
+                        <div class="block-sales__checkbox">
+                        </div>
+                        <div class="block-sales__image">
+                           <img src="images/sales1.png" alt="sales">
+                        </div>
+                        <div class="block-sales__info info-sales">
+                           <a href="#" class="info-sales__title">Футболка UZcotton мужская</a>
+                           <div class="info-sales__custom custom-sales">
+                              <div class="custom-sales__block">Цвет: белый</div>
+                              <div class="custom-sales__block size">Размер: 56/54/52/13/42</div>
+                           </div>
+                        </div>
+                        <div class="block-sales__panel panel-sales">
+                           <div class="panel-sales__btns btns-panel">
+                              <button class="btns-panel__button love">
+                                 <i class="icon-love"></i>
+                              </button>
+                              <button class="btns-panel__button delete">
+                                 <i class="icon-trash"></i>
+                              </button>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="main-sales__block block-sales">
+                        <div class="block-sales__checkbox">
+                        </div>
+                        <div class="block-sales__image">
+                           <img src="images/sales2.png" alt="sales">
+                        </div>
+                        <div class="block-sales__info info-sales">
+                           <a href="#" class="info-sales__title">Силиконовый чехол картхолдер (отверстия) для карт,
+                              прозрачный
+                              кейс бампер на Apple iPhone XR, MobiSafe</a>
+                           <div class="info-sales__custom custom-sales">
+                              <div class="custom-sales__block">Цвет: прозрачный</div>
+                           </div>
+                        </div>
+                        <div class="block-sales__panel panel-sales">
+                           <div class="panel-sales__btns btns-panel">
+                              <button class="btns-panel__button love">
+                                 <i class="icon-love"></i>
+                              </button>
+                              <button class="btns-panel__button delete">
+                                 <i class="icon-trash"></i>
+                              </button>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="main-sales__block block-sales">
+                        <div class="block-sales__checkbox">
+                        </div>
+                        <div class="block-sales__image">
+                           <img src="images/sales3.png" alt="sales">
+                        </div>
+                        <div class="block-sales__info info-sales">
+                           <a href="#" class="info-sales__title">Карандаши цветные Faber-Castell "Замок", набор 24
+                              цвета, заточенные, шестигранные, Faber-Castell</a>
+                        </div>
+                        <div class="block-sales__panel panel-sales">
+                           <div class="panel-sales__btns btns-panel">
+                              <button class="btns-panel__button love">
+                                 <i class="icon-love"></i>
+                              </button>
+                              <button class="btns-panel__button delete">
+                                 <i class="icon-trash"></i>
+                              </button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="content-main__change change-content">
+                  <div class="change-content__head head-change">
+                     <h3 class="head-change__title">Способ доставки</h3>
+                     <a href="#popupDelivery" class="head-change__button popup-link">Изменить</a>
+                  </div>
+                  <div class="change-content__delivery delivery-content">
+                     <h4 class="delivery-content__title address">Пункт выдачи</h4>
+                     <div class="delivery-content__value value-delivery">
+                        <div class="value-delivery__text">Бишкек, улица Ахматбека Суюмбаева, 12/1</div>
+                        <div class="value-delivery__info info-value">
+                           <div class="info-value__block star"><i class="icon-star"></i> 4.99</div>
+                           <div class="info-value__block">Ежедневно с 10 до 21 </div>
+                        </div>
+                     </div>
+                     <h4 class="delivery-content__title">Стоимость доставки</h4>
+                     <div class="delivery-content__value">Бесплатно</div>
+                     <h4 class="delivery-content__title">5—6 февраля</h4>
+                     <div class="delivery-content__value info-value info-value-card">
+                        <div class="info-value__card card-value">
+                           <div class="card-value__image">
+                              <img src="images/sales1.png" alt="sales">
+                           </div>
+                        </div>
+                        <div class="info-value__card card-value">
+                           <div class="card-value__image">
+                              <img src="images/sales2.png" alt="sales">
+                           </div>
+                           <div class="card-value__count number-format">184</div>
+                        </div>
+                        <div class="info-value__card card-value">
+                           <div class="card-value__image">
+                              <img src="images/sales3.png" alt="sales">
+                           </div>
+                           <div class="card-value__count number-format">2</div>
+                        </div>
+                     </div>
+                     <h4 class="delivery-content__title">7—8 февраля</h4>
+                     <div class="delivery-content__value info-value info-value-card">
+                        <div class="info-value__card card-value">
+                           <div class="card-value__image">
+                              <img src="images/sales2.png" alt="sales">
+                           </div>
+                           <div class="card-value__count number-format">16</div>
+                        </div>
+                     </div>
+                     <div class="delivery-content__rejection rejection-delivery">
+                        <div class="rejection-delivery__text">Обратная доставка товаров на склад при отказе — <span
+                              data-id="block-active-7" class="hover-block">бесплатно
+                              <div class="rejection-delivery__link link-rejection">
+                                 <div id="block-active-7" class="link-rejection__content active-block">
+                                    Если товары вам не подойдут, мы вернем их обратно на склад — это бесплатно
+                                 </div>
+                              </div>
+                           </span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="content-main__change change-content">
+                  <div class="change-content__head head-change">
+                     <h3 class="head-change__title">Способ оплаты</h3>
+                     <a href="#popupPay" class="head-change__button popup-link">Изменить</a>
+                  </div>
+                  <div class="change-content__card card-content">
+                     <div class="card-content__block block-card">
+                        <div class="block-card__image">
+                           <img class="card-image" src="icons/mir.png" alt="mir">
+                        </div>
+                        <div class="block-card__number card-number">1234 56•• •••• 1234</div>
+                        <div class="block-card__date">01/30</div>
+                     </div>
+                     <div class="card-content__info">
+                        Спишем оплату с карты при получении
+                     </div>
+                  </div>
+               </div>
+               <div class="content-main__change change-content">
+                  <div class="change-content__head head-change">
+                     <h3 class="head-change__title">Получатель</h3>
+                  </div>
+                  <div class="change-content__user user-change">
+                     <div class="user-change__block block-user">
+                        <div class="block-user__input input-user">
+                           <input class="input-user__input" name="name" type="text" id="name" placeholder="Имя">
+                           <label class="input-user__label" for="name">Имя</label>
+                        </div>
+                        <div class="block-user__info">
+                           <span class="empty">Укажите имя</span>
+                        </div>
+                     </div>
+                     <div class="user-change__block block-user">
+                        <div class="block-user__input input-user">
+                           <input class="input-user__input" name="surname" type="text" id="surname"
+                              placeholder="Фамилия">
+                           <label class="input-user__label" for="surname">Фамилия</label>
+                        </div>
+                        <div class="block-user__info">
+                           <span class="empty">Введите фамилию</span>
+                        </div>
+                     </div>
+                     <div class="user-change__block block-user">
+                        <div class="block-user__input input-user">
+                           <input class="input-user__input" name="email" type="email" id="email" placeholder="Почта">
+                           <label class="input-user__label" for="email">Почта</label>
+                        </div>
+                        <div class="block-user__info">
+                           <span class="error">Проверьте адрес электронной почты</span>
+                           <span class="empty">Укажите электронную почту</span>
+                        </div>
+                     </div>
+                     <div class="user-change__block block-user">
+                        <div class="block-user__input input-user">
+                           <input class="input-user__input" name="phone" maxlength="30" type="tel" id="phone"
+                              placeholder="Телефон">
+                           <label class="input-user__label" for="phone">Телефон</label>
+                        </div>
+                        <div class="block-user__info">
+                           <span class="error">Формат: +9 999 999 99 99</span>
+                           <span class="empty">Укажите номер телефона</span>
+                        </div>
+                     </div>
+                     <div class="user-change__block block-user">
+                        <div class="block-user__input input-user">
+                           <input class="input-user__input" maxlength="10" name="user-number" type="text"
+                              id="user-number" placeholder="Индекс">
+                           <label class="input-user__label" for="user-number">Индекс</label>
+                        </div>
+                        <div class="block-user__info">
+                           <span class="error">Формат: 1234567</span>
+                           <span class="empty">Укажите индекс</span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="main__offer offer-main">
+               <div class="offer-main__price price-offer">
+                  <div class="price-offer__block block-price main-price">
+                     <div class="block-price__text">Итого</div>
+                     <div class="block-price__value main number-format price-sales">2101063</div>
+                  </div>
+                  <div class="price-offer__block block-price">
+                     <div class="block-price__text">4 товара</div>
+                     <div class="block-price__value all number-format price-sales">2302048</div>
+                  </div>
+                  <div class="price-offer__block block-price">
+                     <div class="block-price__text">Скидка</div>
+                     <div class="block-price__value sales number-format price-sales">200985</div>
+                  </div>
+                  <div class="price-offer__block block-price">
+                     <div class="block-price__text">Доставка</div>
+                     <div class="block-price__value">Бесплатно</div>
+                  </div>
+               </div>
+               <div class="offer-main__change change-offer resign-change">
+                  <div class="change-offer__head head-change">
+                     <h3 class="head-change__title address">Доставка в пункт выдачи</h3>
+                     <a href="#popupDelivery" class="head-change__button popup-link">
+                        <i class="icon-resign"></i>
+                     </a>
+                  </div>
+                  <div class="change-offer__text text-change">
+                     <div class="text-change__value address">Бишкек, улица Ахматбека Суюмбаева, 12/1</div>
+                     <a href="#" class="text-change__date">5–8 фев</a>
+                  </div>
+               </div>
+               <div class="offer-main__rejection rejection-delivery">
+                  <div class="rejection-delivery__text">Обратная доставка товаров на склад при отказе — <span
+                        data-id="block-active-8" class="hover-block">бесплатно
+                        <div class="rejection-delivery__link link-rejection">
+                           <div id="block-active-8" class="link-rejection__content active-block">
+                              Если товары вам не подойдут, мы вернем их обратно на склад — это бесплатно
+                           </div>
+                        </div>
+                     </span>
+                  </div>
+               </div>
+               <div class="offer-main__change change-offer resign-change">
+                  <div class="change-offer__head head-change">
+                     <h3 class="head-change__title">Оплата картой</h3>
+                     <a href="#popupPay" class="head-change__button popup-link">
+                        <i class="icon-resign"></i>
+                     </a>
+                  </div>
+                  <div class="change-offer__text text-change">
+                     <div class="text-change__value pay">
+                        <div class="text-change__image">
+                           <img class="card-image" src="icons/mir.png" alt="mir">
+                        </div>
+                        <div class="text-change__number card-number">1234 56•• •••• 1234</div>
+                     </div>
+                  </div>
+               </div>
+               <div class="offer-main__change change-offer pay-change">
+                  <div class="change-offer__text text-change back">
+                     <div class="text-change__checkbox checkbox-text">
+                        <input type="checkbox" class="custom-checkbox pay-now" id="pay">
+                        <label for="pay">Списать оплату сразу</label>
+                     </div>
+                     <div class="text-change__value">Спишем оплату с карты при получении</div>
+                  </div>
+               </div>
+               <div class="offer-main__change change-offer">
+                  <button class="change-offer__pay main-button">Заказать</button>
+                  <div class="change-offer__agree">
+                     <input type="checkbox" class="custom-checkbox" id="agree">
+                     <label for="agree"><span>Соглашаюсь <a href="#">с правилами пользования торговой площадкой</a> и <a
+                              href="#">возврата</a></span></label>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div id="popupPay" class="popup pay">
+            <div class="popup__body">
+               <div class="popup__content content-popup">
+                  <div class="content-popup__head">
+                     <h3 class="popup__title">Способ оплаты</h3>
+                     <a href="#" class="popup__close close-popup">
+                        <i class="icon-close"></i>
+                     </a>
+                  </div>
+                  <div class="content-popup__main main-content">
+                     <div class="main-content__pays pays-content">
+                        <div class="pays-content__block block">
+                           <div class="block__radio">
+                              <input class="custom-radio" name="pay" type="radio" id="pay1" checked>
+                              <label for="pay1">
+                                 <div class="block-pays__image">
+                                    <img src="icons/mir.png" alt="mir">
+                                 </div>
+                                 <div class="block-content">1234 56•• •••• 1234</div>
+                              </label>
+                           </div>
+                           <div class="block__radio">
+                              <input class="custom-radio" name="pay" type="radio" id="pay2">
+                              <label for="pay2">
+                                 <div class="block-pays__image">
+                                    <img src="icons/visa.png" alt="visa">
+                                 </div>
+                                 <div class="block-content">1251 22•• •••• 4125</div>
+                              </label>
+                           </div>
+                           <div class="block__radio">
+                              <input class="custom-radio" name="pay" type="radio" id="pay3">
+                              <label for="pay3">
+                                 <div class="block-pays__image">
+                                    <img src="icons/mc1.png" alt="mc">
+                                 </div>
+                                 <div class="block-content">1251 56•• •••• 7422</div>
+                              </label>
+                           </div>
+                           <div class="block__radio">
+                              <input class="custom-radio" name="pay" type="radio" id="pay4">
+                              <label for="pay4">
+                                 <div class="block-pays__image">
+                                    <img src="icons/mc2.png" alt="mc">
+                                 </div>
+                                 <div class="block-content">5124 86•• •••• 1245</div>
+                              </label>
+                           </div>
+                        </div>
+                     </div>
+                     <button class="main-content__button pay main-button popup__close close-popup">Выбрать</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div id="popupDelivery" class="popup delivery">
+            <div class="popup__body">
+               <div class="popup__content content-popup">
+                  <div class="content-popup__head">
+                     <h3 class="popup__title">Способ доставки</h3>
+                     <a href="#" class="popup__close close-popup">
+                        <i class="icon-close"></i>
+                     </a>
+                  </div>
+                  <div class="content-popup__main main-content">
+                     <div class="main-content__delivery delivery-content">
+                        <div class="delivery-content__btns btns-delivery">
+                           <div data-id="list-1" class="btns-delivery__button get active">В пункт выдачи</div>
+                           <div data-id="list-2" class="btns-delivery__button curier">Курьером</div>
+                        </div>
+                        <h6 class="delivery-content__title">Мои адреса</h6>
+                        <div class="delivery-content__main main-delivery">
+                           <div id="list-1" class="main-delivery__list list-delivery block active">
+                              <div class="block__radio">
+                                 <input class="custom-radio" name="delivery1" type="radio" id="delivery4" checked>
+                                 <label for="delivery4">
+                                    <div class="block-content">
+                                       <div class="block-content__text">г. Бишкек, микрорайон Джал, улица Ахунбаева Исы,
+                                          д. 67/1</div>
+                                       <div class="block-content__info info-block">
+                                          <div class="info-block__star"><i class="icon-star"></i></div>
+                                          <div class="info-block__name">Пункт выдачи</div>
+                                       </div>
+                                    </div>
+                                    <div class="list-delivery__delete">
+                                       <button><i class="icon-trash"></i></button>
+                                    </div>
+                                 </label>
+                              </div>
+                              <div class="block__radio">
+                                 <input class="custom-radio" name="delivery1" type="radio" id="delivery5">
+                                 <label for="delivery5">
+                                    <div class="block-content">
+                                       <div class="block-content__text">г. Бишкек, микрорайон Джал, улица Ахунбаева Исы,
+                                          д. 67/1</div>
+                                       <div class="block-content__info info-block">
+                                          <div class="info-block__star"><i class="icon-star"></i><span>4.99</span></div>
+                                          <div class="info-block__name">Пункт выдачи</div>
+                                       </div>
+                                    </div>
+                                    <div class="list-delivery__delete">
+                                       <button><i class="icon-trash"></i></button>
+                                    </div>
+                                 </label>
+                              </div>
+                              <div class="block__radio">
+                                 <input class="custom-radio" name="delivery1" type="radio" id="delivery6">
+                                 <label for="delivery6">
+                                    <div class="block-content">
+                                       <div class="block-content__text">г. Бишкек, улица Табышалиева, д. 57</div>
+                                       <div class="block-content__info info-block">
+                                          <div class="info-block__star"><i class="icon-star"></i><span>4.99</span></div>
+                                          <div class="info-block__name">Пункт выдачи</div>
+                                       </div>
+                                    </div>
+                                    <div class="list-delivery__delete">
+                                       <button><i class="icon-trash"></i></button>
+                                    </div>
+                                 </label>
+                              </div>
+                           </div>
+                           <div id="list-2" class="main-delivery__list list-delivery block curier">
+                              <div class="block__radio">
+                                 <input class="custom-radio" name="delivery2" type="radio" id="delivery1" checked>
+                                 <label for="delivery1">
+                                    <div class="block-content">Бишкек, улица Табышалиева, 57</div>
+                                    <div class="list-delivery__delete">
+                                       <button><i class="icon-trash"></i></button>
+                                    </div>
+                                 </label>
+                              </div>
+                              <div class="block__radio">
+                                 <input class="custom-radio" name="delivery2" type="radio" id="delivery2">
+                                 <label for="delivery2">
+                                    <div class="block-content">Бишкек, улица Жукеева-Пудовкина, 77/1</div>
+                                    <div class="list-delivery__delete">
+                                       <button><i class="icon-trash"></i></button>
+                                    </div>
+                                 </label>
+                              </div>
+                              <div class="block__radio">
+                                 <input class="custom-radio" name="delivery2" type="radio" id="delivery3">
+                                 <label for="delivery3">
+                                    <div class="block-content">Бишкек, микрорайон Джал, улица Ахунбаева Исы, 67/1</div>
+                                    <div class="list-delivery__delete">
+                                       <button><i class="icon-trash"></i></button>
+                                    </div>
+                                 </label>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <button class="main-content__button address main-button popup__close close-popup">Выбрать</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </main>
+      <footer>
+         <div class="footer__container container">
+            <div class="footer__text">© 2022 ООО «Товары и точка»</div>
+         </div>
+      </footer>
+      <navbar>
+         <button class="navbar__button">
+            <i class="icon-home"></i>
+            <span></span>
+         </button>
+         <button class="navbar__button">
+            <i class="icon-search"></i>
+            <span></span>
+         </button>
+         <button class="navbar__button bag active">
+            <i class="icon-bag"></i>
+            <span>3</span>
+         </button>
+         <button class="navbar__button">
+            <i class="icon-love-fill"></i>
+            <span></span>
+         </button>
+         <button class="navbar__button">
+            <i class="icon-exclude"></i>
+            <span></span>
+         </button>
+      </navbar>
+   </div>
+   <script src="js/script.js"></script>
+</body>
+
+</html>
