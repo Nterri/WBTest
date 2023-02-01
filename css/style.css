@@ -100,7 +100,7 @@ input::-webkit-inner-spin-button {
 }
 @font-face {
   font-family: "Segoe UI Semibold";
-  src: url("../files/SegoeUI-Semibold.woff") format("woff"), url("../files/SegoeUI-Semibold.woff2") format("woff2");
+  src: url("../files/SegoeUI-SemiBold.woff") format("woff"), url("../files/SegoeUI-SemiBold.woff2") format("woff2");
   font-weight: normal;
   font-display: swap;
   font-style: normal;
