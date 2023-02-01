@@ -93,29 +93,29 @@ input::-webkit-inner-spin-button {
 
 @font-face {
   font-family: "Segoe UI";
-  src: url("WBTest/files/SegoeUI.woff") format("woff"), url("WBTest/files/SegoeUI.woff2") format("woff1");
+  src: url("/files/SegoeUI.woff") format("woff"), url("/files/SegoeUI.woff2") format("woff1");
   font-weight: normal;
   font-display: swap;
   font-style: normal;
 }
 @font-face {
   font-family: "Segoe UI Semibold";
-  src: url("WBTest/files/SegoeUI-Semibold.woff") format("woff"), url("WBTest/files/SegoeUI-Semibold.woff2") format("woff1");
+  src: url("/files/SegoeUI-Semibold.woff") format("woff"), url("/files/SegoeUI-Semibold.woff2") format("woff1");
   font-weight: normal;
   font-display: swap;
   font-style: normal;
 }
 @font-face {
   font-family: "Segoe UI Bold";
-  src: url("WBTest/files/SegoeUI-Bold.woff") format("woff"), url("WBTest/files/SegoeUI-Bold.woff2") format("woff1");
+  src: url("/files/SegoeUI-Bold.woff") format("woff"), url("/files/SegoeUI-Bold.woff2") format("woff1");
   font-weight: normal;
   font-display: swap;
   font-style: normal;
 }
 @font-face {
   font-family: "icomoon";
-  src: url("WBTest/files/fonts/icomoon.eot?8ua25l");
-  src: url("WBTest/files/fonts/icomoon.eot?8ua25l#iefix") format("embedded-opentype"), url("WBTest/files/fonts/icomoon.ttf?8ua25l") format("truetype"), url("WBTest/files/fonts/icomoon.woff?8ua25l") format("woff"), url("WBTest/files/fonts/icomoon.svg?8ua25l#icomoon") format("svg");
+  src: url("/files/fonts/icomoon.eot?8ua25l");
+  src: url("/files/fonts/icomoon.eot?8ua25l#iefix") format("embedded-opentype"), url("/files/fonts/icomoon.ttf?8ua25l") format("truetype"), url("/files/fonts/icomoon.woff?8ua25l") format("woff"), url("/files/fonts/icomoon.svg?8ua25l#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -244,7 +244,7 @@ body.lock {
 .custom-checkbox:checked + label::before {
   border-color: #CB11AB;
   background-color: #CB11AB;
-  background-image: url("WBTest/icons/yes.svg");
+  background-image: url("/icons/yes.svg");
 }
 .custom-checkbox:not(:disabled):not(:checked) + label:hover::before {
   border-color: #CB11AB;
@@ -1795,7 +1795,7 @@ main .main__container .offer-main .change-offer .change-offer__agree .custom-che
 main .main__container .offer-main .change-offer .change-offer__agree .custom-checkbox:checked + label::before {
   border-color: rgba(0, 0, 0, 0.2);
   background-color: transparent;
-  background-image: url("WBTest/icons/yesBlack.svg");
+  background-image: url("/icons/yesBlack.svg");
 }
 main .main__container .offer-main .change-offer .change-offer__agree span {
   line-height: 16px;
