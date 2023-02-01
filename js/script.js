@@ -277,14 +277,30 @@ window.addEventListener("DOMContentLoaded", function () {
       })
    }
 
+   function sizeFunc(sizes) {
+      if (window.innerWidth < 992) {
+         sizes.forEach(size => {
+            if (size.parentElement.parentElement.parentElement && ![...size.parentElement.classList].includes('main-sales__block')) {
+               size.innerHTML = size.innerHTML.split(' ')[1]
+               size.parentElement.parentElement.parentElement.insertAdjacentElement("afterbegin", size)
+            }
+         })
+      } else {
+         sizes.forEach(size => {
+            if (size.parentElement.querySelector('.info-sales__custom')) {
+               size.innerHTML = size.innerHTML.includes('Размер: ') ? size.innerHTML : ('Размер: ' + size.innerHTML)
+               size.parentElement.querySelector('.info-sales__custom').insertAdjacentElement("beforeend", size)
+            }
+         })
+      }
+   }
+
    const sizes = document.querySelectorAll('.custom-sales__block.size')
    if (sizes.length) {
-      if (window.innerWidth < 992)
-         sizes.forEach(size => {
-            size.innerHTML = size.innerHTML.split(' ')[1]
-            if (size.parentElement.parentElement.parentElement)
-               size.parentElement.parentElement.parentElement.insertAdjacentElement("afterbegin", size)
-         })
+      sizeFunc(sizes)
+      window.addEventListener('resize', () => {
+         sizeFunc(sizes)
+      })
    }
 
    const navbarButtons = document.querySelectorAll('.navbar__button')
@@ -344,15 +360,19 @@ window.addEventListener("DOMContentLoaded", function () {
    const allSalesInfo = document.querySelector('.head-sales__all')
    const bagInfo = document.querySelectorAll('.btns-header__block')
    const bagNavbar = document.querySelectorAll('.navbar__button')
+   let deliveryCard = document.querySelectorAll('.info-value__card')
+   let deliveryDate = document.querySelectorAll('.delivery-content__value.info-value-card')
 
    function checkPrice() {
       salesBlock = document.querySelectorAll('.main-sales__block')
+      deliveryDate = document.querySelectorAll('.delivery-content__value.info-value-card')
+      deliveryCard = document.querySelectorAll('.info-value__card')
       if (salesBlock.length && priceMain) {
          let priceMains = 0
          let priceMainsOnHead = 0
          let priceWithoutSales = 0
          let counts = 0
-         salesBlock.forEach(block => {
+         salesBlock.forEach((block, index) => {
             const check = block.querySelector('.custom-checkbox')
             const price = block.querySelector('.price-sales__main')
             const priceAll = block.querySelector('.line-sales__text')
@@ -365,6 +385,22 @@ window.addEventListener("DOMContentLoaded", function () {
                priceMainsOnHead += Number(price.innerHTML.split(' ').join('').replace('сом', ''))
             }
             if (count) counts += Number(count.innerHTML)
+            const card = deliveryCard[index]
+            const img = block.querySelector('.block-sales__image').querySelector('img').src
+            const countCard = count ? count.innerHTML : 0
+            if (card) {
+               const placeCount = card.querySelector('.place-value')
+               const placeImage = card.querySelector('.card-value__image').querySelector('img')
+               placeImage.src = img
+               if (placeCount && countCard > 1) {
+                  placeCount.innerHTML = countCard
+                  placeCount.classList.add('card-value__count')
+               }
+               if (placeCount && countCard <= 1) {
+                  placeCount.innerHTML = ''
+                  placeCount.classList.remove('card-value__count')
+               }
+            }
          })
          if (salesBlock && priceAll && priceSales) {
             priceMain.innerHTML = format(priceMains.toString())
@@ -395,6 +431,23 @@ window.addEventListener("DOMContentLoaded", function () {
       }
    }
 
+   function checkSize() {
+      const priceBlock = document.querySelectorAll('.price-sales__main')
+      priceBlock.forEach(price => {
+         const parent = price.parentElement
+         if (parent) {
+            if (window.innerWidth >= 992) {
+               ((parent.offsetWidth / price.offsetWidth + 0.26) * 100) > 150 ? price.style.fontSize = '20px' :
+                  price.style.fontSize = `${(parent.offsetWidth / price.offsetWidth + 0.26) * 100}%`
+            } else {
+               price.style.fontSize = '16px'
+            }
+         }
+      })
+   }
+
+   checkSize()
+   window.addEventListener('resize', checkSize)
    checkPrice()
 
    function validateEmail(email) {
